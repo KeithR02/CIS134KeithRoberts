@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <!-- Note to teacher -I downloaded my images from a website that sells plants, let me know if my images are okay to use. -->
     <!-- This is the site I used for my images: https://www.seedsoflife.com/bestsellers -->
     <header>
-      <nav>
-        <div>
-          <h1>Planet Plants</h1>
-          <h2>make your world greener</h2>
+
+      <nav id="Navigation-Bar">
+
+        <div id="Nav-Logo">
+          <h1 id="Company-Name">Planet Plants</h1>
+          <h2 id="slogan">make your world greener</h2>
         </div>
 
-        <div>
+        <div id="Nav-Links">
           <a href="index.html">Main Page</a>
           <a href="product.html">Product</a>
           <a href="contact.html">Contact Us</a>
@@ -24,7 +27,7 @@
 
       <img src="images/rose_bush_banner.png" alt="Rose bush vine banner" width="1000">
 
-      <div>
+      <div id="Mission-Container">
         <h2>Our Mission</h2>
         <!-- The our mission paragraph is still a rough draft and is currently in progress. -->
         <p>
@@ -35,14 +38,23 @@
           thumbs of yours green, we are here to provide you with all the
           knowledge you need to get started.
         </p>
-      </div>
 
-      <div>
+        
+
+      </div>
+      
+      <hr> <!-- horizontal-line -->
+
         <div>
           <h3>Most Popular</h3>
         </div>
 
-        <div id="products-div">
+
+
+      <div id="products-div">
+
+        <div id="Top-Row-Products">
+
           <div>
             <img alt="Two lemon trees in fabric sacks" src="images/lemon_tree.jpg">
             <h4>Lemon Tree</h4>
@@ -71,6 +83,10 @@
             <p>$88.99</p>
           </div>
 
+        </div>
+
+        <div id="Bottom-Row-Products">
+
           <div>
             <img alt="A potted Golden Pothos plant hanging from the ceiling by rope" src="images/golden_pothos.jpg">
             <h4>Hanging Potted Golden Pothos</h4>
@@ -98,8 +114,10 @@
             <p>18 month old Yellow Dwarf Sunblaze Rose</p>
             <p>$97.99</p>
           </div>
+
         </div>
-      </div>
+        
+
     </header>
   </body>
 </html>

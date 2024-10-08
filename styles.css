@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+}
+
+#Navigation-Bar {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid;
+}
+
+#Nav-Logo {
+  margin-left: 50px;
+  text-align: center;
+}
+
+#Company-Name {
+  margin-top: 30px;
+  line-height: 0;
+}
+
+#Nav-Links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin-right: 20%;
+}
+
+#Mission-Container {
+  border: 1px solid;
+  margin-right: 200px;
+  margin-left: 200px;
+  padding: 25px;
+  padding-right: 75px;
+}
+
+hr {
+  margin-right: 200px;
+  margin-left: 200px;
+  margin-top: 50px;
+  border-top: 2px solid;
+}
+
+#Top-Row-Products {
+}
+
+#Bottom-Row-Products {
+}
