@@ -26,6 +26,10 @@ body {
   margin-right: 20%;
 }
 
+#Rose-Banner {
+  width: 100%;
+}
+
 #Mission-Container {
   border: 1px solid;
   margin-right: 200px;
@@ -41,8 +45,37 @@ hr {
   border-top: 2px solid;
 }
 
+#Most-Popular-Text {
+  margin-left: 200px;
+}
+
+#General-Product-Imgs {
+  height: 300px;
+}
+
 #Top-Row-Products {
+  margin-right: 200px;
+  margin-left: 200px;
+  display: flex;
+  justify-content: space-between;
 }
 
 #Bottom-Row-Products {
+  margin-right: 200px;
+  margin-left: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#Tree-Title {
+  font-size: 15px;
+}
+
+#Tree-Description {
+  font-size: 10px;
+}
+
+
+#Tree-Price {
+  font-size: 10px;
 }
