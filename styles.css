@@ -2,6 +2,57 @@ body {
   margin: 0;
 }
 
+#Rose-Banner {
+  width: 100%;
+}
+
+/*This line divides the index products, 
+products page products, and the contact 
+links on the contact page */
+#Horizontal-Line { 
+  margin-right: 25px;
+  margin-left: 25px;
+  border-top: 2px solid;
+}
+
+#Tree-Title {
+  font-size: 15px;
+  max-width: 200px;
+}
+
+#Tree-Description {
+  font-size: 10px;
+  max-width: 200px;
+}
+
+#Tree-Price {
+  font-size: 10px;
+  max-width: 200px;
+} 
+
+#General-Product-Imgs {
+  max-width: 200px;
+}
+
+#Top-Row-Products {
+  margin-right: 25px;
+  margin-left: 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#Bottom-Row-Products {
+  margin-right: 25px;
+  margin-left: 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/*-------universal styling for all pages. above /\---------*/
+
+
 .link {
   background-color: transparent;
   border: none;
@@ -103,10 +154,6 @@ body {
     flex-direction: row;
   }
 
-  /* #Desktop-Link-Container {
-    gap: 15px;
-  } */
-
   #Desktop-Links {
     display: inline-block;
   }
@@ -116,55 +163,24 @@ body {
   }
 }
 
-#Rose-Banner {
-  width: 100%;
-}
-
 #Mission-Container {
   padding: 25px;
-}
-
-#Index-Line {
-  margin-right: 25px;
-  margin-left: 25px;
-  border-top: 2px solid;
 }
 
 #Most-Popular-Text {
   margin-left: 25px;
 }
 
-#General-Product-Imgs {
-  max-width: 200px;
+/*-----------product.cs styling bellow \/-------------*/
+
+#About-Products-Container {
+  padding: 25px;
 }
 
-#Top-Row-Products {
-  margin-right: 25px;
-  margin-left: 25px;
+#Filter-and-More {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+  gap: 25%;
 }
-
-#Bottom-Row-Products {
-  margin-right: 25px;
-  margin-left: 25px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-#Tree-Title {
-  font-size: 15px;
-  max-width: 200px;
-}
-
-#Tree-Description {
-  font-size: 10px;
-  max-width: 200px;
-}
-
-#Tree-Price {
-  font-size: 10px;
-  max-width: 200px;
-} 
