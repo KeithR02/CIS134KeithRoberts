@@ -13,6 +13,7 @@ body {
   padding: 0;
 }
 
+.dropdown.active > .link,
 .link:hover {
   background-color: rgb(223, 217, 217);
 }
@@ -33,28 +34,54 @@ body {
   pointer-events: none;
   transform: translateY(-10px);
   transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  min-width: 82px;
 }
 
-.dropdown > .link:focus + .dropdown-menu {
+.dropdown-heading {
+  padding-bottom: 8px;
+}
+
+#Mobile-Dropdown-Links-Container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+#Mobile-Links {
+  padding-bottom: 10px;
+}
+
+#Mobile-Links:hover {
+  background-color: aqua;
+}
+
+.dropdown.active > .link + .dropdown-menu {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
 }
 
 #Navigation-Bar {
+  text-align: center;
+  align-items: center;
   display: flex;
-  gap: 50px;
+  gap: 25%;
   border: 2px solid;
 }
 
 #Nav-Logo {
-  margin-left: 5px;
+  margin-left: 10%;
   text-align: center;
 }
 
 #Company-Name {
-  margin-top: 30px;
+  margin-top: 15px;
   line-height: 0;
+  font-size: small;
+}
+
+#slogan {
+  font-size: small;
 }
 
 #Dropdown-Button {
@@ -64,13 +91,6 @@ body {
 #Dropdown-Line {
   border-top: 2px solid;
   width: 25px;
-}
-
-#Nav-Links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
 }
 
 #Desktop-Links {
@@ -83,6 +103,10 @@ body {
     flex-direction: row;
   }
 
+  /* #Desktop-Link-Container {
+    gap: 15px;
+  } */
+
   #Desktop-Links {
     display: inline-block;
   }
@@ -92,163 +116,55 @@ body {
   }
 }
 
-/* #Rose-Banner {
-  width: 100%;
-}
-
-#Mission-Container {
-  border: 1px solid;
-  margin-right: 200px;
-  margin-left: 200px;
-  padding: 25px;
-  padding-right: 75px;
-}
-
-hr {
-  margin-right: 200px;
-  margin-left: 200px;
-  margin-top: 50px;
-  border-top: 2px solid;
-}
-
-#Most-Popular-Text {
-  margin-left: 200px;
-}
-
-#General-Product-Imgs {
-  height: 300px;
-}
-
-#Top-Row-Products {
-  margin-right: 200px;
-  margin-left: 200px;
-  display: flex;
-  justify-content: space-between;
-}
-
-#Bottom-Row-Products {
-  margin-right: 200px;
-  margin-left: 200px;
-  display: flex;
-  justify-content: space-between;
-}
-
-#Tree-Title {
-  font-size: 15px;
-}
-
-#Tree-Description {
-  font-size: 10px;
-}
-
-#Tree-Price {
-  font-size: 10px;
-} */
-
-
-/* body {
-  margin: 0;
-}
-
-#Navigation-Bar {
-  display: flex;
-  justify-content: space-between;
-  border: 2px solid;
-}
-
-#Nav-Logo {
-  margin-left: 50px;
-  text-align: center;
-}
-
-#Company-Name {
-  margin-top: 30px;
-  line-height: 0;
-}
-
-#Nav-Links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 60px;
-  margin-right: 20%;
-}
-
 #Rose-Banner {
   width: 100%;
 }
 
 #Mission-Container {
-  border: 1px solid;
-  margin-right: 200px;
-  margin-left: 200px;
   padding: 25px;
-  padding-right: 75px;
 }
 
-hr {
-  margin-right: 200px;
-  margin-left: 200px;
-  margin-top: 50px;
+#Index-Line {
+  margin-right: 25px;
+  margin-left: 25px;
   border-top: 2px solid;
 }
 
 #Most-Popular-Text {
-  margin-left: 200px;
+  margin-left: 25px;
 }
 
 #General-Product-Imgs {
-  height: 300px;
+  max-width: 200px;
 }
 
 #Top-Row-Products {
-  margin-right: 200px;
-  margin-left: 200px;
+  margin-right: 25px;
+  margin-left: 25px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 #Bottom-Row-Products {
-  margin-right: 200px;
-  margin-left: 200px;
+  margin-right: 25px;
+  margin-left: 25px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 #Tree-Title {
   font-size: 15px;
+  max-width: 200px;
 }
 
 #Tree-Description {
   font-size: 10px;
+  max-width: 200px;
 }
 
 #Tree-Price {
   font-size: 10px;
-} */
-
-/* @media screen and (min-width: 680px) {
-  #Navigation-Bar {
-    display: flex;
-    justify-content: space-between;
-    border: 2px solid;
-  }
-  
-  #Nav-Logo {
-    margin-left: 50px;
-    text-align: center;
-  }
-  
-  #Company-Name {
-    margin-top: 30px;
-    line-height: 0;
-  }
-  
-  #Nav-Links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 60px;
-    margin-right: 20%;
-  } 
-}*/
+  max-width: 200px;
+} 
