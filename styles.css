@@ -171,7 +171,7 @@ links on the contact page */
   margin-left: 25px;
 }
 
-/*-----------product.cs styling bellow \/-------------*/
+/*-----------product.html styling bellow \/-------------*/
 
 #About-Products-Container {
   padding: 25px;
@@ -183,4 +183,27 @@ links on the contact page */
   align-items: center; 
   text-align: center;
   gap: 25%;
+}
+
+/*------------contact.html styling bellow \/--------------*/
+
+#Contact-Us-Text {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+}
+
+#Contact-Desc-Container {
+  padding: 25px;
+  border: 2px solid;
+  margin: 25px;
+}
+
+#Contact-Us-Links {
+  margin-right: 25px;
+  margin-left: 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }

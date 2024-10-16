@@ -4,28 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header>
-      <nav>
-        <div>
-          <h1>Planet Plants</h1>
-          <h2>make your world greener</h2>
+      <nav id="Navigation-Bar">
+
+        <div id="Nav-Logo">
+          <h1 id="Company-Name">Planet Plants</h1>
+          <h2 id="slogan">make your world greener</h2>
         </div>
 
-        <div>
-          <a href="index.html">Main Page</a>
-          <a href="product.html">Product</a>
-          <a href="contact.html">Contact Us</a>
+        <!-- I watched this video to set up my dropdown button, https://www.youtube.com/watch?v=S-VeYcOCFZw by: Web Dev Simplified -->
+        <div id="Nav-Links">
+          <div class="dropdown" data-dropdown>
+            <button class="link" data-dropdown-button id="Dropdown-Button">
+              <hr id="Dropdown-Line">
+              <hr id="Dropdown-Line">
+              <hr id="Dropdown-Line">
+            </button>
+            <div class="dropdown-menu information-grid">
+              <div>
+                <div class="dropdown-heading">Catagories</div>
+                <div class="dropdown-links" id="Mobile-Dropdown-Links-Container">
+                  <a href="index.html" id="Mobile-Links">Main Page</a>
+                  <a href="product.html" id="Mobile-Links">Product</a>
+                  <a href="contact.html" id="Mobile-Links">Contact Us</a>
+                </div>
+              </div>
+
+            </div>
+            <div id="Desktop-Link-Container">
+              <a href="index.html" id="Desktop-Links">Main Page all</a>
+              <a href="product.html" id="Desktop-Links">Product</a>
+              <a href="contact.html" id="Desktop-Links">Contact Us</a>
+            </div>
+          </div>  
         </div>
       </nav>
 
-      <img src="images/rose_bush_banner.png" alt="Rose bush vine banner" width="1000">
+      <img src="images/rose_bush_banner.png" alt="Rose bush vine banner" id="Rose-Banner"/>
 
-      <h2>Contact Us</h2>
+      <h2 id="Contact-Us-Text">Contact Us</h2>
 
-      <div>
-        <h2>Grow our following!</h2>
+      <hr id="Horizontal-Line"> <!-- horizontal-line -->
+
+      <div id="Contact-Desc-Container">
+        <h2 id="Contact-Desc-Title">Grow our following!</h2>
 
         <p>
           Do you have any questions or need to get in touch with us? Give us a follow 
@@ -33,14 +59,14 @@
         </p>
       </div>
 
-      <div>
+      <div id="Contact-Us-Links">
         <a href="">Facebook</a>
         <a href="">Instagram</a>
         <a href="">TikTik</a>
         <a href="">X (Twitter)</a>
         <a href="">Phone</a>        
       </div>
-
+      <hr id="Horizontal-Line"> <!-- horizontal-line -->
     </header>
   </body>
 </html>
