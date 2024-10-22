@@ -9,7 +9,7 @@ body {
 /*This line divides the index products, 
 products page products, and the contact 
 links on the contact page */
-#Horizontal-Line { 
+#Horizontal-Line {
   margin-right: 25px;
   margin-left: 25px;
   border-top: 2px solid;
@@ -17,21 +17,21 @@ links on the contact page */
 
 #Tree-Title {
   font-size: 15px;
-  max-width: 200px;
+  max-width: 150px;
 }
 
 #Tree-Description {
   font-size: 10px;
-  max-width: 200px;
+  max-width: 150px;
 }
 
 #Tree-Price {
   font-size: 10px;
-  max-width: 200px;
-} 
+  max-width: 150px;
+}
 
 #General-Product-Imgs {
-  max-width: 200px;
+  max-width: 100%;
 }
 
 #Top-Row-Products {
@@ -51,7 +51,7 @@ links on the contact page */
 }
 
 /*-------universal styling for all pages. above /\---------*/
-
+/*----------------index bellow \/------------------*/
 
 .link {
   background-color: transparent;
@@ -76,11 +76,11 @@ links on the contact page */
 .dropdown-menu {
   position: absolute;
   left: 0;
-  top: calc(100% + .25rem);
+  top: calc(100% + 0.25rem);
   background-color: white;
-  padding: .75rem;
-  border-radius: .25rem;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
   opacity: 0;
   pointer-events: none;
   transform: translateY(-10px);
@@ -148,6 +148,13 @@ links on the contact page */
   display: none;
 }
 
+#Mission-Container {
+  padding: 25px;
+}
+
+#Most-Popular-Text {
+  margin-left: 25px;
+}
 
 @media (min-width: 769px) {
   #Nav-Links {
@@ -163,14 +170,6 @@ links on the contact page */
   }
 }
 
-#Mission-Container {
-  padding: 25px;
-}
-
-#Most-Popular-Text {
-  margin-left: 25px;
-}
-
 /*-----------product.html styling bellow \/-------------*/
 
 #About-Products-Container {
@@ -180,7 +179,7 @@ links on the contact page */
 #Filter-and-More {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   text-align: center;
   gap: 25%;
 }
@@ -190,7 +189,7 @@ links on the contact page */
 #Contact-Us-Text {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   text-align: center;
 }
 

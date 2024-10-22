@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-
     <!-- This is the site I used for my images: https://www.seedsoflife.com/bestsellers -->
     <header>
-
       <nav id="Navigation-Bar">
-
         <div id="Nav-Logo">
           <h1 id="Company-Name">Planet Plants</h1>
           <h2 id="slogan">make your world greener</h2>
@@ -23,35 +20,41 @@
         <div id="Nav-Links">
           <div class="dropdown" data-dropdown>
             <button class="link" data-dropdown-button id="Dropdown-Button">
-              <hr id="Dropdown-Line">
-              <hr id="Dropdown-Line">
-              <hr id="Dropdown-Line">
+              <hr id="Dropdown-Line" />
+              <hr id="Dropdown-Line" />
+              <hr id="Dropdown-Line" />
             </button>
             <div class="dropdown-menu information-grid">
               <div>
                 <div class="dropdown-heading">Catagories</div>
-                <div class="dropdown-links" id="Mobile-Dropdown-Links-Container">
+                <div
+                  class="dropdown-links"
+                  id="Mobile-Dropdown-Links-Container"
+                >
                   <a href="index.html" id="Mobile-Links">Main Page</a>
                   <a href="product.html" id="Mobile-Links">Product</a>
                   <a href="contact.html" id="Mobile-Links">Contact Us</a>
                 </div>
               </div>
-
             </div>
             <div id="Desktop-Link-Container">
               <a href="index.html" id="Desktop-Links">Main Page all</a>
               <a href="product.html" id="Desktop-Links">Product</a>
               <a href="contact.html" id="Desktop-Links">Contact Us</a>
             </div>
-          </div>  
+          </div>
         </div>
       </nav>
 
-      <img src="images/rose_bush_banner.png" alt="Rose bush vine banner" id="Rose-Banner">
+      <img
+        src="images/rose_bush_banner.png"
+        alt="Rose bush vine banner"
+        id="Rose-Banner"
+      />
 
       <div id="Mission-Container">
         <h2>Our Mission</h2>
-        
+
         <p>
           At Planet Plants, our mission is simple; to make your world greener
           with one plant at a time. We believe that plants create a happier and
@@ -60,87 +63,164 @@
           thumbs of yours green, we are here to provide you with all the
           knowledge you need to get started.
         </p>
-
-        
-
       </div>
-      
-      <hr id="Index-Line"> <!-- horizontal-line -->
 
-        <div id="Most-Popular-Text">
-          <h3>Most Popular</h3>
-        </div>
+      <hr id="Horizontal-Line" />
+      <!-- horizontal-line -->
 
-
+      <div id="Most-Popular-Text">
+        <h3>Most Popular</h3>
+      </div>
 
       <div id="Products-Container">
+        <!-- small = 226px w 305pc h
+        medium = 452px w 610px h
+        large = 904px w 1220px h -->
 
         <div id="Top-Row-Products">
-
           <div>
-            <img alt="Two lemon trees in fabric sacks" src="images/lemon_tree.jpg" id="General-Product-Imgs">
+            <img
+              srcset="images/lemon_tree_small.jpg 226w,
+              images/lemon_tree_medium.jpg 452w,
+              images/lemon_tree_large.jpg 904w"
+
+              sizes="(max-width: 500px) 40vw,
+              (max-width: 900px) 42vw, 25vw"
+
+              src="images/lemon_tree_small.jpg"
+              alt="Two lemon trees in fabric sacks"
+            />
             <h4 id="Tree-Title">Lemon Tree</h4>
             <p id="Tree-Description">24/36 month old Lemon Tree</p>
             <p id="Tree-Price">$79.99 - 108.99</p>
           </div>
 
           <div>
-            <img alt="A potted Aglaonema Creta plant" src="images/aglaonema_creta.jpg" id="General-Product-Imgs">
+            <img
+              srcset="images/aglaonema_creta_small.jpg 226w,
+              images/aglaonema_creta_medium.jpg 452w,
+              images/aglaonema_creta_large.jpg 904w"
+
+              sizes="(max-width: 500px) 40vw,
+              (max-width: 900px) 42vw, 25vw"
+
+            src="images/aglaonema_creta_small.jpg"
+            alt="A potted Aglaonema Creta plant"
+          />
             <h4 id="Tree-Title">Potted Aglaonema Creta</h4>
             <p id="Tree-Description">6 month old Aglaonema Creta</p>
             <p id="Tree-Price">$89.99</p>
           </div>
 
           <div>
-            <img alt="A Fragrant Memorial Gardenia plant in a fabric sack" src="images/fragrant_memorial_gardenia_plant.jpg"  id="General-Product-Imgs">
+            <img
+              srcset="images/fragrant_memorial_gardenia_plant_small.jpg 226w,
+              images/fragrant_memorial_gardenia_plant_medium.jpg 452w,
+              images/fragrant_memorial_gardenia_plant_large.jpg 904w"
+
+              sizes="(max-width: 500px) 40vw,
+              (max-width: 900px) 42vw, 25vw"
+
+              alt="A Fragrant Memorial Gardenia plant in a fabric sack"
+              src="images/fragrant_memorial_gardenia_plant_small.jpg"
+            />
             <h4 id="Tree-Title">Fragrant Memorial Gardenia Plant</h4>
             <p id="Tree-Description">8 month old Fragrant Memorial Gardenia</p>
             <p id="Tree-Price">$59.99</p>
           </div>
 
           <div>
-            <img alt="A potted Aglaonema Osaka plant" src="images/aglaonema_osaka.jpg" id="General-Product-Imgs">
+            <img
+              srcset="images/aglaonema_osaka_small.jpg 226w,
+              images/aglaonema_osaka_medium.jpg 452w,
+              images/aglaonema_osaka_large.jpg 904w"
+
+              sizes="(max-width: 500px) 40vw,
+              (max-width: 900px) 42vw, 25vw"
+
+              alt="A potted Aglaonema Osaka plant"
+              src="images/aglaonema_osaka_small.jpg"
+            />
             <h4 id="Tree-Title">Potted Aglaonema Osaka</h4>
             <p id="Tree-Description">6 month old Aglaonema Osaka</p>
             <p id="Tree-Price">$88.99</p>
           </div>
 
-        </div>
+          <!-- </div>
 
-        <div id="Bottom-Row-Products">
+        <div id="Bottom-Row-Products"> -->
 
           <div>
-            <img alt="A potted Golden Pothos plant hanging from the ceiling by rope" src="images/golden_pothos.jpg" id="General-Product-Imgs">
+            <img
+              srcset="images/golden_pothos_small.jpg 226w,
+              images/golden_pothos_medium.jpg 452w,
+              images/golden_pothos_large.jpg 904w"
+
+              sizes="(max-width: 500px) 40vw,
+              (max-width: 900px) 42vw, 25vw"
+
+              alt="A potted Golden Pothos plant hanging from the ceiling by rope"
+              src="images/golden_pothos_small.jpg"
+            />
             <h4 id="Tree-Title">Hanging Potted Golden Pothos</h4>
             <p id="Tree-Description">12 month old Golden Pothos plant</p>
             <p id="Tree-Price">$65.99</p>
           </div>
 
           <div>
-            <img alt="Two Magnolia Ann Memorial Trees in fabric sacks" src="images/magnolia_ann_memorial_tree.jpg" id="General-Product-Imgs">
+            <img
+              srcset="images/magnolia_ann_memorial_tree_small.jpg 226w,
+              images/magnolia_ann_memorial_tree_medium.jpg 452w,
+              images/magnolia_ann_memorial_tree_large.jpg 904w"
+
+              sizes="(max-width: 500px) 40vw,
+              (max-width: 900px) 42vw, 25vw"
+
+              alt="Two Magnolia Ann Memorial Trees in fabric sacks"
+              src="images/magnolia_ann_memorial_tree_small.jpg"
+            />
             <h4 id="Tree-Title">Magnolia Ann Memorial Tree</h4>
-            <p id="Tree-Description">14/24 month old Magnolia Ann Memorial Tree</p>
+            <p id="Tree-Description">
+              14/24 month old Magnolia Ann Memorial Tree
+            </p>
             <p id="Tree-Price">$84.99 - 104.99</p>
           </div>
 
           <div>
-            <img alt="A potted Gardenia plant" src="images/potted_gardenia.jpg" id="General-Product-Imgs">
+            <img
+              srcset="images/potted_gardenia_small.jpg 226w,
+              images/potted_gardenia_medium.jpg 452w,
+              images/potted_gardenia_large.jpg 904w"
+
+              sizes="(max-width: 500px) 40vw,
+              (max-width: 900px) 42vw, 25vw"
+
+              alt="A potted Gardenia plant"
+              src="images/potted_gardenia_small.jpg"
+            />
             <h4 id="Tree-Title">Potted Gardenia</h4>
             <p id="Tree-Description">12 month old Potted Gardenia</p>
             <p id="Tree-Price">$84.99</p>
           </div>
 
           <div>
-            <img alt="A Yellow Dwarf Sunblaze Rose in a fabric sack" src="images/yellow_darf_sunblaze_rose.jpg" id="General-Product-Imgs">
+            <img
+              srcset="images/yellow_darf_sunblaze_rose_small.jpg 226w,
+              images/yellow_darf_sunblaze_rose_medium.jpg 452w,
+              images/yellow_darf_sunblaze_rose_large.jpg 904w"
+
+              sizes="(max-width: 500px) 40vw,
+              (max-width: 900px) 42vw, 25vw"
+
+              alt="A Yellow Dwarf Sunblaze Rose in a fabric sack"
+              src="images/yellow_darf_sunblaze_rose_small.jpg"
+            />
             <h4 id="Tree-Title">Yellow Dwarf Sunblaze Rose</h4>
             <p id="Tree-Description">18 month old Yellow Dwarf Sunblaze Rose</p>
             <p id="Tree-Price">$97.99</p>
           </div>
-
         </div>
-
-      </div>  
-
+      </div>
     </header>
   </body>
 </html>
