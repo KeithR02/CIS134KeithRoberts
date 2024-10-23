@@ -233,6 +233,7 @@ links on the contact page */
 
 #About-Products-Container {
   padding: 25px;
+  margin-top: -100px;
 }
 
 #Filter-and-More {
