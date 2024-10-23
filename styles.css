@@ -16,22 +16,32 @@ links on the contact page */
 }
 
 #Tree-Title {
-  font-size: 15px;
-  max-width: 150px;
+  font-size: 16px;
+  max-width: 130px;
 }
 
 #Tree-Description {
-  font-size: 10px;
-  max-width: 150px;
+  font-size: 13px;
+  max-width: 130px;
 }
 
 #Tree-Price {
-  font-size: 10px;
-  max-width: 150px;
+  font-size: 13px;
+  max-width: 130px;
 }
 
 #General-Product-Imgs {
-  max-width: 100%;
+  /* box-shadow: 1px 1px 25px black; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8%;
+}
+
+#general-product-container {
+  border: 2px solid;
+  border-radius: 25px;
+  padding: 2%;
+  margin: 1%;
+  margin-bottom: 4%;
 }
 
 #Top-Row-Products {
@@ -40,13 +50,15 @@ links on the contact page */
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  /* align-content: center; */
+  /* align-content: space-between; */
 }
 
 #Bottom-Row-Products {
   margin-right: 25px;
   margin-left: 25px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
@@ -150,6 +162,7 @@ links on the contact page */
 
 #Mission-Container {
   padding: 25px;
+  margin-top: -100px;
 }
 
 #Most-Popular-Text {
@@ -157,6 +170,7 @@ links on the contact page */
 }
 
 @media (min-width: 769px) {
+  /* tablet */
   #Nav-Links {
     flex-direction: row;
   }
@@ -167,6 +181,51 @@ links on the contact page */
 
   #Dropdown-Button {
     display: none;
+  }
+
+  #Tree-Title {
+    font-size: 20px;
+    max-width: 230px;
+  }
+
+  #Tree-Description {
+    font-size: 17px;
+    max-width: 230px;
+  }
+
+  #Tree-Price {
+    font-size: 17px;
+    max-width: 230px;
+  }
+}
+
+@media (min-width: 1300px) {
+  /* desktop */
+  #Nav-Links {
+    flex-direction: row;
+  }
+
+  #Desktop-Links {
+    display: inline-block;
+  }
+
+  #Dropdown-Button {
+    display: none;
+  }
+
+  #Tree-Title {
+    font-size: 25px;
+    max-width: 300px;
+  }
+
+  #Tree-Description {
+    font-size: 22px;
+    max-width: 300px;
+  }
+
+  #Tree-Price {
+    font-size: 22px;
+    max-width: 300px;
   }
 }
 
